@@ -50,6 +50,10 @@ main {
     height: 2rem;
     width: 3rem;
   }
+  #principal {
+    justify-content: center;
+    align-items: center;
+  }
 }
 .login {
   height: 25rem;

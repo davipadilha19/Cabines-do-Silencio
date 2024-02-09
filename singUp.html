@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabine do Silencio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/images/favico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="barraNavegacao">
+        <img id="imagem-logo" src="images/logo.png" alt="logo Cube" />
+        <h2 id="name">GCCI - Gestor de Controle de Cabine Integrado</h2>
+        <div class="container-btn">
+          <button class="btn"><a href="index.html">Sign in</a></button>
+          <button class="btn"><a href="#">Sign Up</a></button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="principal">
+      <form onsubmit="return validarFormulario()">
+        <div class="login">
+          <h1>Inscrever-se</h1>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            class="input-txt"
+            placeholder="Nome"
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-txt"
+            placeholder="e-mail"
+            required
+          />
+          <input
+            id="password"
+            type="password"
+            class="input-txt"
+            placeholder="password"
+            required
+          />
+          <input
+            id="passwordConfirm"
+            type="password"
+            class="input-txt"
+            placeholder="Confirm password"
+            required
+          />
+          <input type="submit" value="Entrar" id="enter" />
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
